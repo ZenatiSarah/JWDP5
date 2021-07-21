@@ -73,6 +73,6 @@ panierCommande.insertAdjacentHTML("beforeend", prix);
   
   // Injection du code HTML
   commande.innerHTML += structureDestinataire;
-  
+  localStorage.clear();
 
 
