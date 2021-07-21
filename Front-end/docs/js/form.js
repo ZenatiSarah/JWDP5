@@ -41,7 +41,7 @@ const regExCodePostal = (value) =>{
     return /^[0-9]{5}$/.test(value)
 }
 const regExEmail = (value) =>{
-    return /^[\w-\.]+@([\w-]+\.)+[\w-]{2.4}$/.test(value)
+    return /^[a-z0-9._-]+@[a-z0-9._-]{2,}\.[a-z]{2,4}$/.test(value)
 }
 const regExAddress = (value) =>{
     return /^[A-Za-z0-9]{5,50}$/.test(value)
@@ -93,7 +93,7 @@ function buttonForm() {
     }
 
     function emailControle() {
-        const lemail = contact.lemail;
+        const lemail = contact.email;
         if (regExEmail(lemail)) {
             return true;
         } else {
