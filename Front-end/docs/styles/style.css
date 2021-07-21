@@ -1,0 +1,116 @@
+body{
+    font-family: system-ui;
+}
+a{
+    text-decoration: none;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+}
+.navbar-icone{max-width: 220px;}
+.navbar-icone img {
+    max-width: 170px;
+    height: 75px;
+    object-fit: scale-down;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    padding: 0;
+}
+ul a{
+    padding: 1rem;
+    text-decoration: none;
+    color: #000;
+}
+ul a:hover{
+    border-top: 3px solid #bb7280;
+}
+h1,h2{
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+h3{
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+.container-p{
+    text-align: center;
+    margin: auto;
+}
+.listOfProduct{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 5rem;
+}
+.container-recap{
+    text-align: center;
+    border: 2px solid;
+    margin: auto;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+}
+.container-texte{
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    justify-content: center;
+
+}
+form{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    margin: auto;
+}
+input{
+    margin-bottom: 8px;
+}
+#envoyerForm{
+    margin-top: 2rem;
+}
+.texte-title, .texte-p{
+    padding-left: 2rem;
+    padding-right: 4rem;
+    padding-top: 0;
+}
+.card{
+    margin-right: 1rem;
+    margin-top: 1rem;
+}
+p{
+    width: 20rem;
+    margin: 0;
+}
+footer{
+    display: flex;
+    justify-content: space-between;
+    background-color: #bb7280;
+    height: 4rem;
+    padding: 1rem;
+    margin-top: 3rem;
+}
+footer a{
+    text-decoration: none;
+    color: #000;
+}
+.btn-primary{
+    margin-top: 2rem;
+}
+.btn-secondary{
+    margin-top: 2rem;
+    margin-left: 15rem;
+}
+.card-price{
+    font-weight: bold;
+}
+
+.prix{
+    font-size: 18px;
+}

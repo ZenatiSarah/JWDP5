@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" 
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="../docs/styles/style.css">
+    <title>Commande</title>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="navbar-icone">
+                <a href="index.html"><img src="../favicon.png" alt="logo Orinico"></a>
+            </div>
+            <div class="navbar-pages">
+                <nav>
+                    <ul><li><a href="./index.html">Accueil</a></li><li><a href="./panier.html">Panier</a></li></ul>                </nav>
+            </div>
+        </div>
+    </header>
+    <h1>Commande Confirmée !</h1>
+    <h2>Récapitulatif de votre commande</h2>
+    <div id="textCommande"></div>
+    <section>
+        <div class="commande">
+            <div class="commande" id="commande">
+                <table class="table">
+                    <thead class="thead-dark">
+                      <tr>
+                        <th scope="col">Nom</th>
+                        <th scope="col">Prix</th>
+                        <th scope="col">Quantité</th>
+                        <th scope="col">Option</th>
+                      </tr>
+                    </thead >
+                    <tbody id="text">
+                    
+                    </tbody>
+                  </table>
+
+            </div>
+        </div>
+        <div class="destinataire">
+            <div class="destinataire" id="destinataire"></div>
+            <div class="container-texte" id="recap_panierForm"></div>
+        </div>
+    </section>
+    <footer>
+        <p>Mention légale.</p>
+        <a href="#">Contactez-nous</a>
+    </footer>    
+<script src="./js/commande.js" type="text/javascript"></script>
+
+
+
+</body>
+</html>
