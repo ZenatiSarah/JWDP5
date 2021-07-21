@@ -154,7 +154,7 @@ function buttonForm() {
 	    })
     }
 
-    if (firstNameControle() && lastNameControle() && addressControle() && codePostalControle()) {
+    if (firstNameControle() && lastNameControle() && addressControle() && codePostalControle() && emailControle() ) {
         localStorage.setItem("contact",JSON.stringify(contact));
         postCommande()
         } else {
