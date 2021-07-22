@@ -6,6 +6,7 @@ function getData (){
       })
 };
 
+
 getData().then(obj =>{
     let listeCamera = document.getElementById('cards');
     

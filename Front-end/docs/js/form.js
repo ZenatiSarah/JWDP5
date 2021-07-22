@@ -64,7 +64,7 @@ function buttonForm() {
         const lefirstName = contact.firstName;
         if (regExFirstNameLastNameCity(lefirstName)) {
             return true;
-        } else {
+        } else if (regExFirstNameLastNameCity(lefirstName) == 0){
             console.log("ko");
             alert(textAlert("firstName"))
             return false;
@@ -72,12 +72,22 @@ function buttonForm() {
     }
 
     function lastNameControle() {
-        const lenom = contact.nom;
+        const lenom = contact.lastName;
         if (regExFirstNameLastNameCity(lenom)) {
             return true;
-        } else {
+        } else if (regExFirstNameLastNameCity(lefirstName) == 0){
             console.log("ko");
             alert(textAlert("Nom"))
+            return false;
+        }
+    }
+    function cityControle() {
+        const city = contact.city;
+        if (regExFirstNameLastNameCity(city)) {
+            return true;
+        } else if (regExFirstNameLastNameCity(city) == 0){
+            console.log("ko");
+            alert(textAlert("City"))
             return false;
         }
     }
@@ -85,7 +95,7 @@ function buttonForm() {
         const leCodePostal = contact.codePostal;
         if (regExCodePostal(leCodePostal)) {
             return true;
-        } else {
+        } else if (regExCodePostal(leCodePostal) == 0){
             console.log("ko");
             alert("Code Postal: doit être composé de 5 chiffres")
             return false;
@@ -96,7 +106,7 @@ function buttonForm() {
         const lemail = contact.email;
         if (regExEmail(lemail)) {
             return true;
-        } else {
+        } else if(regExEmail(lemail) == 0){
             alert("Email: remplissez correctement ce champ")
             return false;
         }
@@ -106,7 +116,7 @@ function buttonForm() {
     const laddress = contact.lemail;
     if (regExAddress(laddress)) {
         return true;
-    } else {
+    } else if(regExAddress(laddress) == 0) {
         console.log("ko");
         alert("address: remplissez correctement ce champ")
         return false;
@@ -144,7 +154,9 @@ function buttonForm() {
         fetch(request)
         .then(res => res.json())
         .then(res => {
+            console.log(res)
     	    let orderId = JSON.stringify(res)
+
     	    localStorage.setItem('orderId', orderId)
         //Redirection
     	window.location.href = './commande.html';
@@ -154,7 +166,7 @@ function buttonForm() {
 	    })
     }
 
-    if (firstNameControle() && lastNameControle() && addressControle() && codePostalControle() && emailControle() ) {
+    if (firstNameControle() && lastNameControle() && addressControle() && codePostalControle() && emailControle() && cityControle()) {
         localStorage.setItem("contact",JSON.stringify(contact));
         postCommande()
         } else {
